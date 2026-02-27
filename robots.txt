@@ -7,6 +7,7 @@ Allow: /our-events.html
 Allow: /our-team.html
 Allow: /project-completed.html
 Allow: /project-in-progress.html
+Allow: /tapaschay.html
 
 # Disallow asset/code folders
 Disallow: /files/
