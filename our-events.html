@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,25 +7,20 @@
   <meta name="description" content="Discover the latest events hosted by Enactus IIT Roorkee. Stay updated on workshops, competitions, and community initiatives driving social change.">
   <meta name="keywords" content="Enactus events, IIT Roorkee events, social entrepreneurship, community initiatives, workshops, competitions">
   <meta name="author" content="Enactus IIT Roorkee">
-  <!-- Open Graph Meta Tags for Social Media -->
   <meta property="og:title" content="Enactus IIT Roorkee">
   <meta property="og:description" content="Explore the latest events hosted by Enactus IIT Roorkee. Join us in driving social change through workshops, competitions, and community initiatives.">
   <meta property="og:image" content="https://static.wixstatic.com/media/2a04f9_700102782a4f460c98a32075113ffbc9%7Emv2.png/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/2a04f9_700102782a4f460c98a32075113ffbc9%7Emv2.png">
   <meta property="og:type" content="website">
-  <!-- Add Rubik and Kelly Slab fonts from Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&family=Kelly+Slab&display=swap" rel="stylesheet">
-  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Leaflet CSS for the map -->
   <link rel="icon" sizes="192x192" href="https://static.wixstatic.com/media/2a04f9_700102782a4f460c98a32075113ffbc9%7Emv2.png/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/2a04f9_700102782a4f460c98a32075113ffbc9%7Emv2.png" type="image/png"/>
   <link rel="shortcut icon" href="https://static.wixstatic.com/media/2a04f9_700102782a4f460c98a32075113ffbc9%7Emv2.png/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/2a04f9_700102782a4f460c98a32075113ffbc9%7Emv2.png" type="image/png"/>
   <link rel="apple-touch-icon" href="https://static.wixstatic.com/media/2a04f9_700102782a4f460c98a32075113ffbc9%7Emv2.png/v1/fill/w_180%2Ch_180%2Clg_1%2Cusm_0.66_1.00_0.01/2a04f9_700102782a4f460c98a32075113ffbc9%7Emv2.png" type="image/png"/>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
   <style>
-    /* Reset and base styles */
     * { box-sizing: border-box; }
     html, body {
-      overflow-x: hidden; /* Prevent horizontal scrolling */
+      overflow-x: hidden;
       width: 100%;
       margin: 0;
       padding: 0;
@@ -33,11 +28,10 @@
     body { 
       font-family: 'Rubik', 'Segoe UI', Arial, sans-serif; 
       background: #fff; 
-      position: relative; /* Helps with overflow handling */
+      position: relative;
     }
     html { scroll-behavior: smooth; }
 
-    /*  container */
     .header {
       width: 100%;
       background: #fff;
@@ -45,7 +39,6 @@
       padding: 0 0 10px 0;
     }
 
-    /* Logo styles */
     .logo {
       display: flex;
       flex-direction: column;
@@ -78,7 +71,6 @@
       }
     }
 
-    /* Navigation styling */
     .nav-link {
       font-size: 1.2rem;
       font-weight: 400;
@@ -120,7 +112,6 @@
       border-bottom: 2px solid #e6b200;
     }
 
-    /* Dropdown styling */
     .dropdown-menu {
       min-width: 180px;
       background: #fff;
@@ -147,7 +138,6 @@
       color: #3b7c3b;
     }
 
-    /* Fixed Social Sidebar */
     .social-sidebar {
       position: fixed;
       right: 0;
@@ -189,7 +179,6 @@
       background: #4267B2;
     }
 
-    /* Footer Styles */
     .footer {
       background-color: #e6a700;
       color: #000;
@@ -347,7 +336,6 @@
       background: #f8f9fa;
     }
 
-    /* Event page styles */
     .events-header {
       background: #002855;
       padding: 40px 0;
@@ -394,7 +382,6 @@
       }
     }
     
-    /* Custom clip path for larger screens */
     @media (min-width: 768px) {
       .event-card {
         clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%);
@@ -523,21 +510,17 @@
     </div>
   </header>
   
-  <!-- Content Area -->
   <main>
-    <!-- Header Banner -->
     <div class="events-header">
       <div class="container">
         <h1 class="events-title">Our Events</h1>
       </div>
     </div>
     
-    <!-- Events Content -->
     <div class="events-content">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 col-lg-10">
-            <!-- Envision Event -->
             <div class="event-card" style="background: #e6a700;">
               <div class="event-info">
                 <h2 class="event-title">Envision</h2>
@@ -561,7 +544,6 @@
               </div>
             </div>
             
-            <!-- Social Impact Workshop -->
             <div class="event-card" style="background: #002147;">
               <div class="event-info">
                 <h2 class="event-title" style="color: #bfbfbf;">Fresher's Ignite</h2>
@@ -585,7 +567,6 @@
               </div>
             </div>
             
-            <!-- Community Outreach Day -->
             <div class="event-card" style="background: #e6a700;">
               <div class="event-info">
                 <h2 class="event-title">Enact-a-thon 6.0</h2>
@@ -611,7 +592,6 @@
               </div>
             </div>
             
-            <!-- Innovation Challenge -->
             <div class="event-card" style="background: #002147;">
               <div class="event-info">
                 <h2 class="event-title" style="color: #bfbfbf;">Speaker Session 2025</h2>
@@ -636,7 +616,6 @@
     </div>
   </main>
   
-  <!-- Footer Section -->
   <footer class="footer py-5" id="footer">
     <div class="container">
       <div class="row">
@@ -687,7 +666,6 @@
     </div>
   </footer>
 
-  <!-- Fixed Social Sidebar -->
   <div class="social-sidebar">
     <a href="https://www.instagram.com/enactus_iitroorkee" class="social-sidebar-icon instagram-bg" aria-label="Instagram" target="_blank">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -706,13 +684,10 @@
     </a>
   </div>
 
-  <!-- Bootstrap JS and Popper.js -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   
-  <!-- Leaflet map script -->
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      // First load the Leaflet CSS
       var leafletCSS = document.createElement('link');
       leafletCSS.rel = 'stylesheet';
       leafletCSS.href = 'https://unpkg.com/leaflet@1.7.1/dist/leaflet.css';
@@ -720,7 +695,6 @@
       leafletCSS.crossOrigin = '';
       document.head.appendChild(leafletCSS);
       
-      // Then load the Leaflet JS with a slight delay to ensure CSS is loaded
       setTimeout(function() {
         var script = document.createElement('script');
         script.src = "https://unpkg.com/leaflet@1.7.1/dist/leaflet.js";
@@ -728,35 +702,28 @@
         script.crossOrigin = "";
         
         script.onload = function() {
-          // Create the map only after the script has loaded
           var mapContainer = document.getElementById('map');
           
           if (mapContainer) {
-            // IIT Roorkee coordinates
             var mapCenter = [29.8665, 77.8999];
             
-            // Initialize the map
             var map = L.map('map', {
               zoomControl: false,
               attributionControl: true
             }).setView(mapCenter, 15);
             
-            // Add the tile layer (map imagery)
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
               maxZoom: 19,
               attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             }).addTo(map);
             
-            // Add custom zoom control in a better position
             L.control.zoom({
               position: 'topright'
             }).addTo(map);
             
-            // Add a marker for Enactus office
             var marker = L.marker(mapCenter).addTo(map)
               .bindPopup("<strong>Enactus Office</strong><br>SAC Building, IIT Roorkee");
               
-            // Force a resize event after map creation to ensure proper rendering
             setTimeout(function() {
               map.invalidateSize();
             }, 100);
@@ -768,4 +735,24 @@
     });
   </script>
 </body>
-</html> 
+</html>  -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Redirecting...</title>
+
+  <!-- Primary redirect -->
+  <meta http-equiv="refresh" content="0; url=https://iitr.ac.in/enactus/our-events.html" />
+
+  <!-- Canonical (VERY IMPORTANT) -->
+  <link rel="canonical" href="https://iitr.ac.in/enactus/our-events.html" />
+
+  <!-- SEO signal -->
+  <meta name="robots" content="noindex, follow" />
+</head>
+
+<body>
+  <p>If you are not redirected, <a href="https://iitr.ac.in/enactus/our-events.html">click here</a>.</p>
+</body>
+</html>
